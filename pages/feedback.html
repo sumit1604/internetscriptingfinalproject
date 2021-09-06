@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dark fanpage: feedback</title>
+    <link rel="shortcut icon" href="../favicon/Dark_logo.png" >
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/feedback.css">
+</head>
+
+<body>
+    <header>
+        <img src="../logo/Dark1.jpg" alt="Dark series logo" width="100" height="120">
+        <h2>Dark Netflix</h2> 
+        <h3>Celebrating 3 years of Dark</h3> 
+    </header> 
+    <nav id="nav_menu">
+        <ul class="index_nav">
+            <li><a href="../index.html" >Home</a></li>
+            <li ><a href="images.html">Images</a>
+                <ul>
+                    <li><a href="#">Free images</a></li>
+                    <li ><a href="#">Link for images</a>
+                        <ul>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                       </ul>
+                    </li>
+               </ul>
+            </li>
+            <li><a class="current" href="feedback.html">Feedback</a></li> 
+        </ul>
+    </nav>    
+<main>       
+    <aside>            
+        <h2>Navigation area</h2>
+         <h3>Home page</h3>
+         <a  href="../index.html"> Home screen <img src="../images/Dark_hompage.jpg" width="100" height="120"></img></a>
+         <br>
+         <h3>images pages</h3>
+         <a  href="images.html"> Images pages <img src="../images/netflix_dark.jpg" width="100" height="120"></img></a>
+         <br>
+         <h3>Feedback</h3>
+         <a  href="feedback.html"> Give your feedback<img src="../images/feedback2.png"  width="140" height="120"></img></a>
+    </aside>
+    <section>
+    <h2>Feedback form</h2>
+   
+        <article>     
+            <form>
+                <label for="first_name">First Name:</label>
+					<input placeholder="Enter your first name" type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name" >Last Name:</label>
+					<input placeholder="Enter your last name" type="text" name="last_name" id="last_name" required><br>
+                <label for="email">E-Mail:</label>
+                    <input  placeholder="Enter your Email-id"  type="email" name="email" id="email" required><br>
+
+               <label for="season_selection">Select season:</label>
+					<select name="Season" id="list">
+                        <optgroup  label="Seasons">
+                        <option value="Season-1">Season 1</option>
+				    	<option value="season-2">Season 2</option>            
+                        <option value="season-3">Season 3</option>
+                        </optgroup>
+                        <optgroup label="Episodes">
+                            <option value="Episode 1-10">S1 E1-E10</option>
+                            <option value="Episode 1-8">S2 E1-E8</option>            
+                            <option value="Episode 1-8">S3 E1-E8</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                 <label for="cars">Favourite part:</label>
+                 <select name="Favourite part" id="Favourite part" multiple>
+                  <option value="Images">Images</option>
+                  <option value="Easy Navigation">Easy Navigation</option>
+                  <option value="Content">Content</option>
+                  <option value="information">information</option>
+                </select>
+                <br><br>
+                <label for="textarea">Message:</label>
+                <textarea id="textarea" name="feedback_things" rows="7" cols="50"></textarea>
+                <label>&nbsp;</label>
+                <button onclick="myFunction()">Submit</button>
+                  <script>
+                   function myFunction() {
+                   alert("Your form has been submitted.");
+                 }
+                </script>
+                <button type="reset" id="clear" value="Clear">Clear</button><br>
+            </form>
+        </article> 
+            
+    </section>            
+    <sidebar>
+        <h3>Another form</h3>
+        <fieldset id="first">
+            <legend>My website is</legend>
+        <input type="checkbox"  name="Fun to visit" id="Fun to visit" value="Fun to visit">
+                <label tabindex="1" for="Fun to visit">Fun to visit</label> <br>
+                <input  type="checkbox" name="Well Designed" id="Well Designed" value="Well Designed">
+                <label tabindex="2" for="Well Designed">Well Designed</label> <br>
+                <input  type="checkbox" name="Uses good colours" id="Uses good colours" value="Uses good colours">
+                <label tabindex="3" for="Uses good colours">Uses good colours</label> <br>
+                <input  type="checkbox" name="Easy to use" id="Easy to use" value="Easy to use">
+                <label tabindex="4" for="Easy to use">Easy to use</label>  
+               </fieldset>
+               <fieldset id="second">  
+                <legend>Will you visit again?</legend>
+                <input  type="radio" name="feedback_things" id="yes" value="yes">
+				<label tabindex="5" for="yes">Yes</label>
+				<input  type="radio" name="feedback_things" id="no" value="no">
+                <label tabindex="6" for="no">No</label>
+                </fieldset>
+                <button onclick="myFunction()" type="submit">Submit</button>
+                <script>
+                 function myFunction() {
+                 alert("Your form has been submitted.");
+               }
+              </script>
+                <script>
+                    document.getElementsByTagName('label')[0].focus();
+                    </script>
+    </sidebar>
+</main>
+<footer>
+    <p>&copy; 2020 Dark fanpage- darkfanpage.com</p> 
+</footer>
+
+</body>
+</html>

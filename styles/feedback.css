@@ -1,0 +1,325 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: rgba(40, 44, 107, 0.438);
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 960px;
+    margin: 0 auto;
+    border: 3px solid rgb(29, 40, 56);
+    background-color: #c4d3ee;
+}
+a:focus, a:hover {
+	font-style: bold;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	height: 100px;
+	border-bottom: 3px solid  rgb(29, 40, 56);
+	background-image: -moz-linear-gradient(50deg, rgb(29, 40, 56) 0%, rgb(29, 40, 56) 30%, rgb(176, 214, 221) 50%,rgb(29, 40, 56) 80%, rgb(29, 40, 56) 100%);
+	background-image: -webkit-linear-gradient(50deg, rgb(29, 40, 56) 0%, rgb(29, 40, 56) 30%,  rgb(176, 214, 221) 50%,rgb(29, 40, 56) 80%, rgb(29, 40, 56) 100%);
+	background-image: -o-linear-gradient(50deg, rgb(29, 40, 56) 0%, rgb(29, 40, 56) 30%,  rgb(176, 214, 221) 50%,rgb(29, 40, 56) 80%, rgb(29, 40, 56) 100%);
+	background-image: linear-gradient(50deg, rgb(29, 40, 56) 0%, rgb(29, 40, 56) 30%,  rgb(176, 214, 221) 50%,rgb(29, 40, 56) 80%, rgb(29, 40, 56) 100%);
+}
+
+header h2 {
+	font-size: 250%;
+	color: rgb(213, 218, 123);
+	text-shadow: 2px 2px 2px black;
+}
+
+header h3 {
+	font-size: 175%;
+	color: rgb(176, 214, 221);
+	text-shadow: 2px 2px 2px black;
+	font-style: italic;
+}
+
+header img {
+	float: left;
+	margin: -10px 35px;
+	border: 1px solid #64a9e2d8;
+}
+
+main {
+	clear: left;
+}
+
+/*navigation menu*/
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	
+} 
+#nav_menu ul.index_nav{
+	border-bottom: 2px solid  rgb(29, 40, 56);
+}
+#nav_menu a:hover {
+	display: block;
+	background-color:  rgba(222, 187, 250, 0.918);
+	color: rgb(3, 3, 3);
+} 
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+} 
+#nav_menu ul ul li{
+	float: none;
+	position: relative;
+} 
+#nav_menu ul li:hover > ul{
+	display: block;
+	
+} 
+#nav_menu > ul::after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+#nav_menu ul li{
+	float: left;
+}
+#nav_menu ul li a{
+	display: block;
+	width: 320px;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color:  rgb(42, 51, 66);
+	color: white;
+	font-weight: bold;
+}
+#nav_menu ul li a.current{
+	display: block;
+	background-color:  rgba(222, 187, 250, 0.918);
+	color: rgb(3, 3, 3);
+}
+#nav_menu>ul>li 
+{ 
+ 	float: left;
+    position: relative;
+}
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%; left: 0;
+}
+#nav_menu ul ul ul 
+{ 
+	top: 0;
+	 left: 100%; 
+}
+/* the styles for the section */
+.circle {
+	list-style-type: circle;
+}
+aside {
+	width: 200px;
+	float: left;
+	padding: 0 0 20px 20px;
+}
+
+aside h2 {
+	color: rgb(29, 40, 56);
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+	color: rgba(52, 0, 136, 0.795);
+	margin-top: 2px;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	border: 1px solid rgb(29, 40, 56);
+}
+aside a{
+   
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color:  rgb(50, 25, 165);
+	border: 2px solid  rgb(29, 40, 56);
+	background-color: rgb(134, 157, 184);
+}
+section {
+	width: 500px;
+	float: left;
+	padding: 0 10px 20px 30px;
+}
+
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+section h2 {
+	color: rgba(52, 0, 136, 0.795);
+	font-size: 130%;
+	padding-top: 12px;
+}
+
+section p {
+	padding-bottom: .5em;
+}
+
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+
+
+section ul {
+	padding: 0 0 .25em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+article{
+	border: 2px solid rgb(29, 40, 56);
+	border-radius: 5px;
+	margin-top: 15px;
+	padding-top: 10px;
+	background-color:rgb(170, 199, 231);
+}
+main sidebar
+{
+	width: 180px;
+	float: right;
+	padding-right: 10px;
+	padding-right: 10px;
+    padding-top: 10px;
+}
+sidebar h3{
+	color: rgba(52, 0, 136, 0.795);
+}
+sidebar p {
+	padding-top: 10px;
+}
+sidebar a{
+	display: block;
+	background-color:  rgba(52, 0, 136, 0.795);
+	border: 1px solid rgb(29, 40, 56);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+	border-radius: 3px;
+	padding: 2px;
+}
+sidebar a:hover{
+	background-color:  rgb(231, 133, 150);
+	color: black;
+}
+sidebar h4{
+	margin-top: 5px;
+}
+
+sidebar legend{
+    color: rgb(0, 0, 0);
+	font-size: 20px;
+	margin-top: 10px;
+}
+sidebar input{
+     margin: 5px;
+}
+sidebar fieldset{
+	border: 2px solid rgb(29, 40, 56);
+	background-color:rgb(170, 199, 231);
+}
+#list{
+	margin-top: 10px;
+}
+#first{
+	margin-top: 10px;
+}
+#second{
+	margin-top: 30px;
+}
+form{
+	
+	font-style: bold;
+}
+label{
+	margin-left: 5px;
+	font-weight: 540;
+}
+form input{
+	width: 15em;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#email{
+	margin-left: 32px;
+}
+#season_num{
+	margin-left: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 2px;
+
+}
+#textarea{
+	margin-left: 30px;
+	margin-top: 5px;
+}
+article button {
+	background-color: rgb(153, 147, 247);
+	font-weight: 600;
+	padding: 3px;
+    border-radius: 3px;
+	width: 120px;
+	margin-left: 100px;
+	color: black;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+sidebar button{
+	background-color: rgb(153, 147, 247);
+	font-weight: 600;
+	padding: 2px;
+    border-radius: 3px;
+	width: 100px;
+	color: black;
+	justify-content: center;
+	margin-top: 10px;
+}
+#clear{
+
+	background-color: rgb(153, 147, 247);
+	font-weight: 600;
+	padding: 2px;
+    border-radius: 3px;
+	width: 100px;
+	color: black;
+	margin-top: 5px;
+}
+#clear:hover, #submit:hover{
+	background-color: rgba(222, 187, 250, 0.918);
+	color: black;
+
+}
+
+/* the styles for the footer */
+footer {
+	clear: both;
+}
+footer p {
+	text-align: center;
+	background-color: rgb(29, 40, 56);
+	color: white;
+	padding: 1em 0;
+}
